@@ -20,6 +20,5 @@ DATABASE_URL = environ.get('DATABASE_URL', 'Your MongoDb') #MONGO DB
 OWNER_ID = int(environ.get('OWNER_ID', None)) #OWNER ID
 MAIN_CHANNEL = int(environ.get('MAIN_CHANNEL', None))#YOUR MAIN CHANNEL ID
 ARCHIVE_CHANNEL = int(environ.get('ARCHIVE_CHANNEL', None))#YOUR ARCHIVE CHANNEL
-MESSAGE_ID = int(environ.get('MESSAGE_ID', None)) #SUB CHANNEL STATUS ID
 
 soheru = Client('SoheruBots', api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, plugins=dict(root="Bot/plugins"))
